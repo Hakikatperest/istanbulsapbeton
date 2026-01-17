@@ -1,0 +1,1830 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Esenler Şap & Beton | Esenler'de Profesyonel Şap ve Beton Hizmetleri</title>
+    <meta name="description" content="Esenler'de profesyonel şap, beton, zemin düzeltme ve yapı çözümleri. Uzman ekibimizle Esenler'in tüm mahallelerinde kaliteli şap ve beton hizmetleri.">
+    <meta name="keywords" content="esenler şap, esenler beton, esenler zemin düzeltme, esenler şap ustası, esenler beton dökümü, esenler epoksi zemin, esenler hazır beton">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* TEMEL STİLLER - MAVİ TEMA */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            width: 100%;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #2c5aa0;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #1d447c;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-blue {
+            background-color: #2c5aa0;
+        }
+        
+        .btn-blue:hover {
+            background-color: #1d447c;
+        }
+        
+        .btn-orange {
+            background-color: #f57c00;
+        }
+        
+        .btn-orange:hover {
+            background-color: #d26900;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 0 15px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: #222;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: #2c5aa0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .blue-title {
+            color: #2c5aa0 !important;
+        }
+        
+        .orange-title {
+            color: #f57c00 !important;
+        }
+        
+        /* MODERN HEADER */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+            width: 100%;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+        
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+            color: #2c5aa0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .logo-text span {
+            color: #f57c00;
+        }
+        
+        /* MODERN TELEFON BUTONU */
+        .modern-phone-button {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #2c5aa0 0%, #1d447c 100%);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            margin-left: 20px;
+            box-shadow: 0 4px 12px rgba(44, 90, 160, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .modern-phone-button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: 0.5s;
+        }
+        
+        .modern-phone-button:hover:before {
+            left: 100%;
+        }
+        
+        .modern-phone-button:hover {
+            background: linear-gradient(135deg, #1d447c 0%, #2c5aa0 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px rgba(44, 90, 160, 0.3);
+        }
+        
+        .modern-phone-button i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        
+        .phone-number {
+            font-size: 17px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        .main-nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .main-nav ul {
+            display: flex;
+            gap: 25px;
+            margin: 0 auto;
+        }
+        
+        .main-nav a {
+            font-weight: 500;
+            font-size: 16px;
+            color: #333;
+            padding: 5px 0;
+            position: relative;
+        }
+        
+        .main-nav a:hover, .main-nav a.active {
+            color: #2c5aa0;
+        }
+        
+        .main-nav a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #2c5aa0;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        .main-nav a:hover:after, .main-nav a.active:after {
+            width: 100%;
+        }
+        
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-content {
+            position: absolute;
+            background-color: white;
+            min-width: 220px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            border-top: 3px solid #2c5aa0;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown-content a {
+            display: block;
+            padding: 12px 20px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f8f9fa;
+            padding-left: 25px;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+            order: 2;
+        }
+        
+        /* HERO BÖLÜMÜ - ESENLER ÖZEL */
+        .hero-esenler {
+            position: relative;
+            height: 70vh;
+            min-height: 500px;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+            width: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero-content-esenler {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+        
+        .hero-esenler h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: white !important;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            letter-spacing: 1px;
+        }
+        
+        .hero-esenler h2 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            font-weight: 400;
+            color: #ffeb3b;
+        }
+        
+        .hero-esenler p {
+            font-size: 18px;
+            margin-bottom: 35px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .call-button-hero {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(135deg, #f57c00 0%, #d26900 100%);
+            color: white;
+            padding: 15px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 18px;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            box-shadow: 0 4px 12px rgba(245, 124, 0, 0.2);
+        }
+        
+        .call-button-hero:hover {
+            background: linear-gradient(135deg, #d26900 0%, #f57c00 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(245, 124, 0, 0.3);
+        }
+        
+        .call-button-hero i {
+            margin-right: 12px;
+            font-size: 20px;
+        }
+        
+        .whatsapp-button-hero {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            padding: 15px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 18px;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+            margin-left: 15px;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+        }
+        
+        .whatsapp-button-hero:hover {
+            background: linear-gradient(135deg, #128C7E 0%, #25D366 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+        }
+        
+        .whatsapp-button-hero i {
+            margin-right: 12px;
+            font-size: 20px;
+        }
+        
+        /* TEKLİF AL KARTLARI */
+        .quote-section {
+            background-color: #f0f7ff;
+            width: 100%;
+            padding: 80px 0;
+        }
+        
+        .quote-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            width: 100%;
+        }
+        
+        .quote-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border-top: 4px solid #2c5aa0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .quote-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .quote-card.orange {
+            border-top-color: #f57c00;
+        }
+        
+        .quote-card.blue {
+            border-top-color: #2c5aa0;
+        }
+        
+        .quote-card.green {
+            border-top-color: #25D366;
+        }
+        
+        .quote-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #2c5aa0 0%, #1d447c 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            color: white;
+            font-size: 28px;
+        }
+        
+        .quote-card.orange .quote-icon {
+            background: linear-gradient(135deg, #f57c00 0%, #d26900 100%);
+        }
+        
+        .quote-card.green .quote-icon {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+        }
+        
+        .quote-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .quote-card p {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        
+        .quote-btn {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(135deg, #2c5aa0 0%, #1d447c 100%);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(44, 90, 160, 0.2);
+            margin-top: auto;
+        }
+        
+        .quote-btn:hover {
+            background: linear-gradient(135deg, #1d447c 0%, #2c5aa0 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(44, 90, 160, 0.3);
+        }
+        
+        .quote-btn i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        
+        .quote-card.orange .quote-btn {
+            background: linear-gradient(135deg, #f57c00 0%, #d26900 100%);
+            box-shadow: 0 4px 12px rgba(245, 124, 0, 0.2);
+        }
+        
+        .quote-card.orange .quote-btn:hover {
+            background: linear-gradient(135deg, #d26900 0%, #f57c00 100%);
+            box-shadow: 0 8px 20px rgba(245, 124, 0, 0.3);
+        }
+        
+        .quote-card.green .quote-btn {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+        }
+        
+        .quote-card.green .quote-btn:hover {
+            background: linear-gradient(135deg, #128C7E 0%, #25D366 100%);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+        }
+        
+        /* MAKALE İÇERİK BÖLÜMÜ */
+        .content-section {
+            background-color: #fff;
+            width: 100%;
+        }
+        
+        .article-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .article-content {
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            line-height: 1.8;
+            font-size: 17px;
+        }
+        
+        .article-content h2 {
+            color: #2c5aa0;
+            margin: 30px 0 20px;
+            font-size: 28px;
+        }
+        
+        .article-content h3 {
+            color: #f57c00;
+            margin: 25px 0 15px;
+            font-size: 22px;
+        }
+        
+        .article-content p {
+            margin-bottom: 20px;
+            color: #444;
+        }
+        
+        .article-content ul, .article-content ol {
+            margin-bottom: 20px;
+            padding-left: 30px;
+        }
+        
+        .article-content li {
+            margin-bottom: 10px;
+            color: #444;
+        }
+        
+        .highlight-box {
+            background-color: #f0f7ff;
+            border-left: 4px solid #2c5aa0;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .highlight-box h4 {
+            color: #2c5aa0;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        /* ESENLER MAHALLELER BÖLÜMÜ */
+        .districts-section {
+            background-color: #f8f9fa;
+            width: 100%;
+            padding: 80px 0;
+        }
+        
+        .districts-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            width: 100%;
+        }
+        
+        @media (max-width: 992px) {
+            .districts-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            
+            .quote-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .districts-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .quote-cards {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            
+            .article-content {
+                padding: 30px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .districts-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .article-content {
+                padding: 20px;
+                font-size: 16px;
+            }
+            
+            .article-content h2 {
+                font-size: 24px;
+            }
+            
+            .article-content h3 {
+                font-size: 20px;
+            }
+        }
+        
+        .district-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border-left: 3px solid #2c5aa0;
+        }
+        
+        .district-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-left: 3px solid #f57c00;
+        }
+        
+        .district-card a {
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .district-card:hover a {
+            color: #2c5aa0;
+        }
+        
+        /* NEDEN BİZ BÖLÜMÜ */
+        .benefits-section {
+            background-color: #fff;
+            width: 100%;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        
+        .benefit-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border-top: 4px solid #2c5aa0;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .benefit-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #2c5aa0 0%, #1d447c 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: white;
+            font-size: 28px;
+        }
+        
+        .benefit-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .benefit-card p {
+            color: #666;
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+        
+        /* HİZMETLER LİSTESİ */
+        .services-list-section {
+            background-color: #f8f9fa;
+            width: 100%;
+        }
+        
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        .service-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-item h3 {
+            color: #2c5aa0;
+            margin-bottom: 15px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .service-item h3 i {
+            margin-right: 10px;
+            font-size: 22px;
+        }
+        
+        .service-item ul {
+            padding-left: 20px;
+        }
+        
+        .service-item li {
+            margin-bottom: 8px;
+            color: #444;
+            position: relative;
+            padding-left: 10px;
+        }
+        
+        .service-item li:before {
+            content: '✓';
+            color: #f57c00;
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
+        }
+        
+        /* FOOTER */
+        footer {
+            background-color: #222;
+            color: #ddd;
+            padding-top: 80px;
+            width: 100%;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 60px;
+            width: 100%;
+        }
+        
+        .footer-logo h3 {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .footer-logo h3 span {
+            color: #f57c00;
+        }
+        
+        .footer-logo p {
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+        
+        .footer-title {
+            color: white;
+            font-size: 20px;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-title:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: #2c5aa0;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a:hover {
+            color: #2c5aa0;
+            padding-left: 5px;
+        }
+        
+        .contact-info-footer li {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+        
+        .contact-info-footer i {
+            color: #2c5aa0;
+            margin-right: 15px;
+            font-size: 18px;
+            margin-top: 3px;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background-color: #2c5aa0;
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 25px 0;
+            text-align: center;
+            font-size: 15px;
+            width: 100%;
+        }
+        
+        /* MODERN SABİT BUTONLAR */
+        .fixed-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .call-btn-fixed {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #2c5aa0 0%, #1d447c 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .call-btn-fixed:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: 0.5s;
+        }
+        
+        .call-btn-fixed:hover:before {
+            left: 100%;
+        }
+        
+        .call-btn-fixed:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(44, 90, 160, 0.3);
+        }
+        
+        .whatsapp-btn-fixed {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .whatsapp-btn-fixed:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: 0.5s;
+        }
+        
+        .whatsapp-btn-fixed:hover:before {
+            left: 100%;
+        }
+        
+        .whatsapp-btn-fixed:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+        }
+        
+        .btn-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(44, 90, 160, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(44, 90, 160, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(44, 90, 160, 0);
+            }
+        }
+        
+        /* MOBİL UYUMLULUK */
+        @media (max-width: 992px) {
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .hero-esenler h1 {
+                font-size: 38px;
+            }
+            
+            .hero-esenler h2 {
+                font-size: 24px;
+            }
+            
+            .modern-phone-button {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .main-nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 280px;
+                height: 100vh;
+                background-color: white;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+                padding: 80px 30px 30px;
+                transition: right 0.4s ease;
+                z-index: 1001;
+                overflow-y: auto;
+                justify-content: flex-start;
+            }
+            
+            .main-nav.active {
+                right: 0;
+            }
+            
+            .main-nav ul {
+                flex-direction: column;
+                gap: 0;
+                width: 100%;
+            }
+            
+            .main-nav li {
+                border-bottom: 1px solid #f1f1f1;
+                width: 100%;
+            }
+            
+            .main-nav a {
+                display: block;
+                padding: 15px 0;
+                width: 100%;
+            }
+            
+            .dropdown-content {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                border-top: none;
+                padding-left: 20px;
+                display: none;
+                width: 100%;
+            }
+            
+            .dropdown.active .dropdown-content {
+                display: block;
+            }
+            
+            .hero-esenler {
+                height: auto;
+                min-height: 400px;
+                padding: 100px 0;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            
+            .services-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title h2 {
+                font-size: 30px;
+            }
+            
+            .fixed-buttons {
+                bottom: 25px;
+                right: 20px;
+            }
+            
+            .call-btn-fixed, .whatsapp-btn-fixed {
+                width: 55px;
+                height: 55px;
+                font-size: 24px;
+            }
+            
+            .logo-text {
+                font-size: 20px;
+            }
+            
+            .call-button-hero, .whatsapp-button-hero {
+                padding: 12px 20px;
+                font-size: 16px;
+                margin-top: 15px;
+            }
+            
+            .hero-esenler h1 {
+                font-size: 36px;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .hero-esenler h2 {
+                font-size: 20px;
+            }
+            
+            .section-title h2 {
+                font-size: 26px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                max-width: 350px;
+                margin: 0 auto;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .hero-esenler h1 {
+                font-size: 28px;
+            }
+            
+            .hero-esenler h2 {
+                font-size: 18px;
+            }
+            
+            section {
+                padding: 50px 0;
+            }
+            
+            .logo-text {
+                font-size: 18px;
+            }
+            
+            .section-title h2 {
+                font-size: 24px;
+            }
+            
+            .fixed-buttons {
+                bottom: 20px;
+                right: 15px;
+            }
+        }
+        
+        .menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        
+        .menu-overlay.active {
+            display: block;
+        }
+        
+        .emergency-banner {
+            background: linear-gradient(135deg, #f57c00 0%, #d26900 100%);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-weight: 600;
+            font-size: 18px;
+            width: 100%;
+            box-shadow: 0 2px 10px rgba(245, 124, 0, 0.2);
+        }
+        
+        /* BREADCRUMB NAVIGATION */
+        .breadcrumb {
+            background-color: #f8f9fa;
+            padding: 15px 0;
+            width: 100%;
+        }
+        
+        .breadcrumb-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .breadcrumb a {
+            color: #2c5aa0;
+            font-weight: 500;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        .breadcrumb span {
+            margin: 0 8px;
+            color: #666;
+        }
+        
+        .breadcrumb .current {
+            color: #f57c00;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Acil Durum Bannerı -->
+    <div class="emergency-banner">
+        <i class="fas fa-hard-hat"></i> ESENLER ACİL ŞAP & BETON HİZMETİ: 7/24 HİZMETİNİZDEYİZ! <i class="fas fa-hard-hat"></i>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <!-- Logo Alanı -->
+                <div class="logo-container">
+                    <div class="logo-text">
+                        İstanbul <span>Şap & Beton</span>
+                    </div>
+                </div>
+                
+                <!-- Modern telefon butonu -->
+                <a href="tel:05432768171" class="modern-phone-button">
+                    <i class="fas fa-phone"></i>
+                    <span class="phone-number">0543 276 81 71</span>
+                </a>
+                
+                <!-- Mobil Menü Butonu -->
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <!-- Ana Navigasyon -->
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li class="dropdown" id="districtsDropdown">
+                            <a href="ilce-hizmetleri.html">Hizmet Bölgelerimiz <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="arnavutkoy-sap-beton.html">Arnavutköy Şap & Beton</a>
+                                <a href="avcilar-sap-beton.html">Avcılar Şap & Beton</a>
+                                <a href="bagcilar-sap-beton.html">Bağcılar Şap & Beton</a>
+                                <a href="bahcelievler-sap-beton.html">Bahçelievler Şap & Beton</a>
+                                <a href="bakirkoy-sap-beton.html">Bakırköy Şap & Beton</a>
+                                <a href="basaksehir-sap-beton.html">Başakşehir Şap & Beton</a>
+                                <a href="bayrampasa-sap-beton.html">Bayrampaşa Şap & Beton</a>
+                                <a href="besiktas-sap-beton.html">Beşiktaş Şap & Beton</a>
+                                <a href="beylikduzu-sap-beton.html">Beylikdüzü Şap & Beton</a>
+                                <a href="beyoglu-sap-beton.html">Beyoğlu Şap & Beton</a>
+                                <a href="buyukcekmece-sap-beton.html">Büyükçekmece Şap & Beton</a>
+                                <a href="catalca-sap-beton.html">Çatalca Şap & Beton</a>
+                                <a href="esenler-sap-beton.html" class="active">Esenler Şap & Beton</a>
+                                <a href="esenyurt-sap-beton.html">Esenyurt Şap & Beton</a>
+                                <a href="eyupsultan-sap-beton.html">Eyüpsultan Şap & Beton</a>
+                                <a href="fatih-sap-beton.html">Fatih Şap & Beton</a>
+                                <a href="gaziosmanpasa-sap-beton.html">Gaziosmanpaşa Şap & Beton</a>
+                                <a href="gungoren-sap-beton.html">Güngören Şap & Beton</a>
+                                <a href="kagithane-sap-beton.html">Kağıthane Şap & Beton</a>
+                                <a href="kucukcekmece-sap-beton.html">Küçükçekmece Şap & Beton</a>
+                                <a href="sariyer-sap-beton.html">Sarıyer Şap & Beton</a>
+                                <a href="silivri-sap-beton.html">Silivri Şap & Beton</a>
+                                <a href="sultangazi-sap-beton.html">Sultangazi Şap & Beton</a>
+                                <a href="sisli-sap-beton.html">Şişli Şap & Beton</a>
+                                <a href="zeytinburnu-sap-beton.html">Zeytinburnu Şap & Beton</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Mobil Menü Overlay -->
+        <div class="menu-overlay" id="menuOverlay"></div>
+    </header>
+    
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-container">
+                <a href="index.html">Ana Sayfa</a>
+                <span>/</span>
+                <a href="ilce-hizmetleri.html">Hizmet Bölgelerimiz</a>
+                <span>/</span>
+                <span class="current">Esenler Şap & Beton</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Esenler Hero Bölümü -->
+    <section class="hero-esenler" id="home">
+        <div class="container">
+            <div class="hero-content-esenler">
+                <h1>ESENLER ŞAP & BETON</h1>
+                <h2>Esenler'de Profesyonel Şap ve Beton Hizmetleri</h2>
+                <p>Esenler'de 15+ yıllık deneyimimizle şap, beton, zemin düzeltme ve yapı çözümleri sunuyoruz. Menderes, Birlik, Tuna, 15 Temmuz ve tüm Esenler mahallelerinde hizmetinizdeyiz.</p>
+                
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+                    <!-- Telefon Arama Butonu -->
+                    <a href="tel:05432768171" class="call-button-hero">
+                        <i class="fas fa-phone"></i> Hemen Ara: 0543 276 81 71
+                    </a>
+                    
+                    <!-- WhatsApp Butonu -->
+                    <a href="https://wa.me/905432768171" target="_blank" class="whatsapp-button-hero">
+                        <i class="fab fa-whatsapp"></i> WhatsApp'tan Yaz
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Teklif Al Bölümü -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="blue-title" style="margin-top: 30px; margin-bottom: 30px;">Esenler'de Ücretsiz Teklif Alın</h2>
+                <p style="max-width: 800px; margin: 0 auto 30px;">Esenler'deki projeniz için en uygun çözümü sunabilmemiz için aşağıdaki seçeneklerden birini seçerek hemen teklif alabilirsiniz.</p>
+            </div>
+            
+            <div class="quote-cards">
+                <!-- Teklif Kartı 1 -->
+                <div class="quote-card blue">
+                    <div class="quote-icon">
+                        <i class="fas fa-phone-volume"></i>
+                    </div>
+                    <h3>Telefon ile Teklif Al</h3>
+                    <p>Uzman ekibimizle doğrudan iletişime geçin. Esenler'deki projenizi anlatın, detaylı fiyat teklifi alın.</p>
+                    <a href="tel:05432768171" class="quote-btn">
+                        <i class="fas fa-phone"></i> Hemen Ara
+                    </a>
+                </div>
+                
+                <!-- Teklif Kartı 2 -->
+                <div class="quote-card orange">
+                    <div class="quote-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp ile Teklif Al</h3>
+                    <p>WhatsApp üzerinden Esenler'deki proje fotoğraflarınızı gönderin, hızlı ve detaylı teklif alın.</p>
+                    <a href="https://wa.me/905432768171" target="_blank" class="quote-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp'tan Yaz
+                    </a>
+                </div>
+                
+                <!-- Teklif Kartı 3 -->
+                <div class="quote-card green">
+                    <div class="quote-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Ücretsiz Keşif Randevusu</h3>
+                    <p>Esenler adresinize gelip ücretsiz keşif yapalım. En uygun çözümü ve fiyatı size sunalım.</p>
+                    <a href="tel:05432768171" class="quote-btn">
+                        <i class="fas fa-calendar-alt"></i> Randevu Al
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Esenler Hakkında Makale Bölümü -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="blue-title">Esenler'de Profesyonel Şap ve Beton Hizmetleri</h2>
+            </div>
+            
+            <div class="article-container">
+                <div class="article-content">
+                    <h2>Esenler'de Kaliteli Şap ve Beton Hizmeti</h2>
+                    
+                    <p><strong>Esenler Şap & Beton</strong> olarak, İstanbul'un merkezi ilçelerinden biri olan Esenler'de 15 yılı aşkın süredir profesyonel şap, beton ve zemin düzeltme hizmetleri sunmaktayız. Esenler'in tüm mahallelerinde, konut, işyeri, fabrika ve ticari mekanlarda uzman ekibimizle hizmet veriyoruz.</p>
+                    
+                    <p>Esenler'in yoğun yapılaşma düzeni ve hareketli sosyal hayatı, kaliteli yapı malzemeleri ve uzman işçilik gerektirmektedir. Bizler de bu ihtiyaca cevap vermek için en son teknoloji ekipmanlarımız ve deneyimli ustalarımızla Esenler'de şap ve beton işlerinizi titizlikle gerçekleştiriyoruz.</p>
+                    
+                    <h3>Esenler'de Sunduğumuz Şap ve Beton Hizmetleri</h3>
+                    
+                    <p>Esenler'de müşterilerimize kapsamlı şap ve beton çözümleri sunuyoruz. Hizmet yelpazemiz şunları içermektedir:</p>
+                    
+                    <ul>
+                        <li><strong>Şap Atma İşleri:</strong> Esenler'de beton zeminler üzerine şap atma, tesviye şapı, alçı şap, çimento şap ve kendiliğinden yayılan şap uygulamaları</li>
+                        <li><strong>Beton Döküm ve Tamiratı:</strong> Esenler'de hazır beton temini, beton dökümü, beton sıkıştırma, beton kırma ve kesme işlemleri</li>
+                        <li><strong>Zemin Düzeltme ve Tesviye:</strong> Esenler'de eğimli zeminlerin düzeltilmesi, zemin tesviyesi, zemin hazırlık çalışmaları</li>
+                        <li><strong>Epoksi Zemin Kaplama:</strong> Esenler'de endüstriyel tesisler, depolar, otoparklar için epoksi zemin kaplama çözümleri</li>
+                        <li><strong>Yapısal Tamirat ve Güçlendirme:</strong> Esenler'de beton tamiratı, çatlak onarımı, su yalıtımı ve yapı güçlendirme çalışmaları</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <h4>Esenler'de Neden Bizi Tercih Etmelisiniz?</h4>
+                        <p>Esenler'de 15+ yıllık sektör deneyimimiz, uzman ekibimiz, kaliteli malzemelerimiz ve müşteri memnuniyeti odaklı çalışma prensibimizle fark yaratıyoruz. Esenler'deki tüm projelerimizde zamanında teslimat ve uygun fiyat garantisi sunuyoruz.</p>
+                    </div>
+                    
+                    <h3>Esenler'in Mahallelerinde Hizmet Veriyoruz</h3>
+                    
+                    <p>Esenler'in tüm mahallelerinde şap ve beton hizmetleri sunmaktayız. Özellikle şu mahallelerde sıklıkla hizmet veriyoruz:</p>
+                    
+                    <ul>
+                        <li><strong>Menderes Mahallesi:</strong> Esenler'in merkezi konumunda olan Menderes Mahallesi'nde konut ve işyeri şap-beton işleri</li>
+                        <li><strong>Birlik Mahallesi:</strong> Yoğun nüfuslu Birlik Mahallesi'nde zemin düzeltme ve beton tamirat hizmetleri</li>
+                        <li><strong>Tuna Mahallesi:</strong> Tuna Mahallesi'nde epoksi zemin kaplama ve endüstriyel zemin çözümleri</li>
+                        <li><strong>15 Temmuz Mahallesi:</strong> 15 Temmuz Mahallesi'nde hazır beton temini ve beton döküm işleri</li>
+                        <li><strong>Fatih Mahallesi:</strong> Fatih Mahallesi'nde şap atma ve zemin tesviye çalışmaları</li>
+                        <li><strong>Sanayi Mahallesi:</strong> Sanayi Mahallesi'nde fabrika ve endüstriyel tesisler için özel çözümler</li>
+                        <li><strong>Havaalanı Mahallesi:</strong> Havaalanı Mahallesi'nde ticari mekanlar için şap ve beton hizmetleri</li>
+                        <li><strong>Kemer Mahallesi:</strong> Kemer Mahallesi'nde yapısal tamirat ve güçlendirme çalışmaları</li>
+                    </ul>
+                    
+                    <h3>Esenler'de Şap ve Beton Uygulamalarında Dikkat Edilmesi Gerekenler</h3>
+                    
+                    <p>Esenler'de şap ve beton uygulamaları yapılırken dikkat edilmesi gereken önemli noktalar bulunmaktadır:</p>
+                    
+                    <ol>
+                        <li><strong>Zemin Analizi:</strong> Esenler'de her bölgenin zemini farklı özellikler gösterebilir. Uygulama öncesi detaylı zemin analizi yapılmalıdır.</li>
+                        <li><strong>Malzeme Kalitesi:</strong> Esenler'in iklim koşullarına uygun, kaliteli şap ve beton malzemeleri kullanılmalıdır.</li>
+                        <li><strong>Uygulama Tekniği:</strong> Esenler'de doğru uygulama teknikleri kullanılarak uzun ömürlü sonuçlar elde edilmelidir.</li>
+                        <li><strong>Kuruma Süreleri:</strong> Esenler'de hava koşulları dikkate alınarak uygun kuruma süreleri beklenmelidir.</li>
+                        <li><strong>Profesyonel Ekip:</strong> Esenler'de deneyimli ve uzman ekiplerle çalışmak kaliteyi garanti altına alır.</li>
+                    </ol>
+                    
+                    <h3>Esenler'de Fiyatlandırma ve Teklif Süreci</h3>
+                    
+                    <p>Esenler'de şap ve beton işleri için fiyatlandırma aşağıdaki faktörlere göre belirlenmektedir:</p>
+                    
+                    <ul>
+                        <li>İşin türü ve kapsamı (şap atma, beton dökümü, zemin kaplama vb.)</li>
+                        <li>Kullanılacak malzemenin kalitesi ve markası</li>
+                        <li>Çalışma alanının metrekaresi</li>
+                        <li>İşin zorluk derecesi ve süresi</li>
+                        <li>Esenler'deki ulaşım mesafesi ve lojistik gereksinimleri</li>
+                    </ul>
+                    
+                    <p>Esenler'deki projeniz için en uygun fiyat teklifini almak için <strong>0543 276 81 71</strong> numaralı telefonumuzdan bize ulaşabilir veya <strong>WhatsApp</strong> üzerinden proje detaylarınızı iletebilirsiniz.</p>
+                    
+                    <div class="highlight-box">
+                        <h4>Esenler'de Acil Şap ve Beton Hizmeti</h4>
+                        <p>Esenler'de acil şap ve beton ihtiyaçlarınız için 7/24 hizmet vermekteyiz. Acil beton tamiratı, şap atma veya zemin düzeltme ihtiyaçlarınızda hemen bize ulaşabilirsiniz. Esenler'in her mahallesine hızlı müdahale ekibimizle ulaşıyoruz.</p>
+                    </div>
+                    
+                    <h3>Esenler'de Müşteri Memnuniyeti ve Garanti</h3>
+                    
+                    <p><strong>Esenler Şap & Beton</strong> olarak, Esenler'de yaptığımız tüm işlerde müşteri memnuniyetini ön planda tutuyoruz. İşlerimiz için malzeme ve işçilik garantisi sunuyoruz. Esenler'de tamamladığımız her projeden sonra müşterilerimizle iletişimimizi sürdürüyor, olası sorunlara hızlı çözümler üretiyoruz.</p>
+                    
+                    <p>Esenler'de kaliteli, güvenilir ve ekonomik şap-beton hizmeti için doğru adrestesiniz. Siz de Esenler'deki şap ve beton ihtiyaçlarınız için bizi arayın, uzman ekibimizle tanışın.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Esenler Mahalleleri Bölümü -->
+    <section class="districts-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="blue-title">Esenler'de Hizmet Verdiğimiz Mahalleler</h2>
+                <p style="max-width: 800px; margin: 0 auto 40px;">Esenler'in tüm mahallelerinde profesyonel şap ve beton hizmetleri sunuyoruz. Aşağıdaki mahallelerde ücretsiz keşif ve fiyat teklifi hizmetimizden yararlanabilirsiniz.</p>
+            </div>
+            
+            <div class="districts-grid">
+                <div class="district-card">
+                    <a href="tel:05432768171">Menderes Mahallesi</a>
+                </div>
+                <div class="district-card">
+                    <a href="tel:05432768171">Birlik Mahallesi</a>
+                </div>
+                <div class="district-card">
+                    <a href="tel:05432768171">Tuna Mahallesi</a>
+                </div>
+                <div class="district-card">
+                    <a href="tel:05432768171">15 Temmuz Mahallesi</a>
+                </div>
+                <div class="district-card">
+                    <a href="tel:05432768171">Fatih Mahallesi</a>
+                </div>
+                <div class="district-card">
+                    <a href="tel:05432768171">Sanayi Mahallesi</a>
+                </div>
+                <div class="district-card">
+                    <a href="tel:05432768171">Havaalanı Mahallesi</a>
+                </div>
+                <div class="district-card">
+                    <a href="tel:05432768171">Kemer Mahallesi</a>
+                </div>
+                <div class="district-card">
+                    <a href="tel:05432768171">Nenehatun Mahallesi</a>
+                </div>
+                <div class="district-card">
+                    <a href="tel:05432768171">Kazım Karabekir Mahallesi</a>
+                </div>
+                <div class="district-card">
+                    <a href="tel:05432768171">Yavuz Selim Mahallesi</a>
+                </div>
+                <div class="district-card">
+                    <a href="tel:05432768171">Mevlana Mahallesi</a>
+                </div>
+                <div class="district-card">
+                    <a href="tel:05432768171">Fevzi Çakmak Mahallesi</a>
+                </div>
+                <div class="district-card">
+                    <a href="tel:05432768171">Turgut Reis Mahallesi</a>
+                </div>
+                <div class="district-card">
+                    <a href="tel:05432768171">Çiftehavuzlar Mahallesi</a>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="tel:05432768171" class="btn btn-blue">
+                    <i class="fas fa-phone"></i> Tüm Mahalleler İçin Hemen Ara
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Hizmetler Listesi -->
+    <section class="services-list-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="orange-title">Esenler'de Sunduğumuz Hizmetler</h2>
+            </div>
+            
+            <div class="services-list">
+                <div class="service-item">
+                    <h3><i class="fas fa-trowel"></i> Esenler Şap İşleri</h3>
+                    <ul>
+                        <li>Beton üzeri şap atma</li>
+                        <li>Isı ve ses yalıtımlı şap</li>
+                        <li>Alçı ve çimento şap</li>
+                        <li>Kendiliğinden yayılan şap</li>
+                        <li>Profesyonel tesviye işlemleri</li>
+                    </ul>
+                </div>
+                
+                <div class="service-item">
+                    <h3><i class="fas fa-industry"></i> Esenler Beton İşleri</h3>
+                    <ul>
+                        <li>Hazır beton temini</li>
+                        <li>Beton döküm ve sıkıştırma</li>
+                        <li>Beton kırma ve kesme</li>
+                        <li>Beton tamir ve güçlendirme</li>
+                        <li>Su yalıtımlı beton uygulamaları</li>
+                    </ul>
+                </div>
+                
+                <div class="service-item">
+                    <h3><i class="fas fa-layer-group"></i> Esenler Zemin Kaplama</h3>
+                    <ul>
+                        <li>Epoksi zemin kaplama</li>
+                        <li>Poliretan zemin sistemleri</li>
+                        <li>Seramik ve fayans döşeme</li>
+                        <li>Laminat ve parke zemin</li>
+                        <li>Endüstriyel zemin çözümleri</li>
+                    </ul>
+                </div>
+                
+                <div class="service-item">
+                    <h3><i class="fas fa-tools"></i> Esenler Tamirat Hizmetleri</h3>
+                    <ul>
+                        <li>Beton tamir ve güçlendirme</li>
+                        <li>Çatlak ve derz tamiratı</li>
+                        <li>Yapısal onarım işleri</li>
+                        <li>Su yalıtım çözümleri</li>
+                        <li>Yapı yenileme projeleri</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Neden Biz Bölümü -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="blue-title">Esenler'de Neden Bizi Tercih Etmelisiniz?</h2>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>15+ Yıl Deneyim</h3>
+                    <p>Esenler'de 15 yılı aşkın süredir şap ve beton sektöründe hizmet veriyoruz. Deneyimimizle en zorlu projeleri bile başarıyla tamamlıyoruz.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Uzman Ekip</h3>
+                    <p>Esenler'deki tüm projelerimizde alanında uzman, sertifikalı ve deneyimli ekiplerle çalışıyoruz. İşlerimizde kaliteyi ön planda tutuyoruz.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Kalite Garantisi</h3>
+                    <p>Esenler'de kullandığımız tüm malzemeler kalite standartlarına uygun, belgeli ve garantilidir. İşçiliğimiz için de garanti sunuyoruz.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Zamanında Teslimat</h3>
+                    <p>Esenler'deki projelerimizi belirlenen sürelerde tamamlıyoruz. Müşterilerimize zamanında teslimat konusunda söz veriyoruz.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Uygun Fiyat</h3>
+                    <p>Esenler'de kaliteli hizmeti uygun fiyatlara sunuyoruz. Size özel fiyat teklifleriyle bütçenize uygun çözümler üretiyoruz.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>7/24 Destek</h3>
+                    <p>Esenler'de acil şap ve beton ihtiyaçlarınız için 7/24 hizmet veriyoruz. Size her zaman ulaşabileceğiniz bir destek ekibimiz var.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- İletişim Önizleme -->
+    <section class="content-section" style="background-color: #f8f9fa; width: 100%;">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="orange-title">Esenler'de Bize Ulaşın</h2>
+                <p style="max-width: 800px; margin: 0 auto 30px;">Esenler'deki şap ve beton ihtiyaçlarınız için hemen bize ulaşın. Ücretsiz keşif ve danışmanlık hizmetimizden yararlanın.</p>
+            </div>
+            
+            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
+                    <div style="text-align: center;">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #2c5aa0 0%, #1d447c 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 32px;">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #2c5aa0;">Telefon</h3>
+                        <p style="font-size: 20px; font-weight: 700; color: #333;">0543 276 81 71</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 32px;">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #128C7E;">WhatsApp</h3>
+                        <p style="font-size: 18px; color: #333;">7/24 Mesaj Gönderin</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #f57c00 0%, #d26900 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 32px;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #f57c00;">Konum</h3>
+                        <p style="font-size: 18px; color: #333;">Esenler ve Tüm İstanbul</p>
+                    </div>
+                </div>
+                
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 40px;">
+                    <a href="tel:05432768171" class="btn btn-orange" style="padding: 15px 35px; font-size: 18px;">
+                        <i class="fas fa-phone"></i> Hemen Ara
+                    </a>
+                    <a href="https://wa.me/905432768171" target="_blank" class="btn" style="background-color: #25D366; padding: 15px 35px; font-size: 18px;">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer style="width: 100%;">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col footer-logo">
+                    <h3>İstanbul <span>Şap & Beton</span></h3>
+                    <p>İstanbul'un profesyonel şap ve beton uzmanı. Kaliteli malzeme ve uzman ekip ile hizmetinizdeyiz.</p>
+                    <div class="social-icons">
+                        <a href="https://wa.me/905432768171" target="_blank" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:05432768171" class="social-icon">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">İletişim</h4>
+                    <ul class="contact-info-footer">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>0543 276 81 71</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>info@istanbulsapbeton.com</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>İstanbul Anadolu ve Avrupa Yakası</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>2024 © Tüm Hakları Saklıdır - İstanbul Şap & Beton | Profesyonel Şap ve Beton Hizmetleri</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- MODERN SABİT BUTONLAR (Sağ Altta) -->
+    <div class="fixed-buttons">
+        <a href="https://wa.me/905432768171" target="_blank" class="whatsapp-btn-fixed btn-pulse">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:05432768171" class="call-btn-fixed">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+    
+    <script>
+        // Mobil Menü Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+        const menuOverlay = document.getElementById('menuOverlay');
+        
+        function toggleMobileMenu() {
+            const isActive = mainNav.classList.contains('active');
+            mainNav.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+            
+            if (isActive) {
+                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            } else {
+                mobileMenuBtn.querySelector('i').classList.remove('fa-bars');
+                mobileMenuBtn.querySelector('i').classList.add('fa-times');
+            }
+        }
+        
+        function closeMobileMenu() {
+            mainNav.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.classList.remove('menu-open');
+            mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+            mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+        
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+        menuOverlay.addEventListener('click', closeMobileMenu);
+        
+        // Dropdown Menü için Mobil Uyumluluk
+        const districtsDropdown = document.getElementById('districtsDropdown');
+        
+        districtsDropdown.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                e.stopPropagation();
+                this.classList.toggle('active');
+            }
+        });
+        
+        // Menü Linklerine Tıklandığında Mobil Menüyü Kapat
+        document.querySelectorAll('.main-nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    if (!this.parentElement.classList.contains('dropdown') || 
+                        this.nextElementSibling === null) {
+                        closeMobileMenu();
+                    }
+                }
+            });
+        });
+        
+        // Buton pulse animasyonu
+        const callBtn = document.querySelector('.call-btn-fixed');
+        if (callBtn) {
+            setInterval(() => {
+                callBtn.classList.toggle('btn-pulse');
+            }, 4000);
+        }
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
