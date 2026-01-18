@@ -2436,7 +2436,7 @@
             });
         });
         
-        // Mobil Menü Toggle
+        // Mobil Menü Toggle - DÜZELTİLDİ
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mainNav = document.getElementById('mainNav');
         const menuOverlay = document.getElementById('menuOverlay');
@@ -2445,24 +2445,22 @@
             const isActive = mainNav.classList.contains('active');
             mainNav.classList.toggle('active');
             menuOverlay.classList.toggle('active');
-            document.body.classList.toggle('menu-open');
+            document.body.style.overflow = isActive ? 'auto' : 'hidden';
             
             if (isActive) {
-                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
-                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
             } else {
-                mobileMenuBtn.querySelector('i').classList.remove('fa-bars');
-                mobileMenuBtn.querySelector('i').classList.add('fa-times');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-times"></i>';
             }
         }
         
         function closeMobileMenu() {
             mainNav.classList.remove('active');
             menuOverlay.classList.remove('active');
-            document.body.classList.remove('menu-open');
-            mobileMenuBtn.querySelector('i').classList.remove('fa-times');
-            mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            document.body.style.overflow = 'auto';
+            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
             
+            // Dropdown menüleri de kapat
             document.querySelectorAll('.dropdown').forEach(dropdown => {
                 dropdown.classList.remove('active');
             });
@@ -2474,24 +2472,34 @@
         // Dropdown Menü için Mobil Uyumluluk
         const districtsDropdown = document.getElementById('districtsDropdown');
         
-        districtsDropdown.addEventListener('click', function(e) {
-            if (window.innerWidth <= 768) {
-                e.preventDefault();
-                e.stopPropagation();
-                this.classList.toggle('active');
-            }
-        });
+        if (districtsDropdown) {
+            districtsDropdown.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    this.classList.toggle('active');
+                }
+            });
+        }
         
         // Menü Linklerine Tıklandığında Mobil Menüyü Kapat
         document.querySelectorAll('.main-nav a').forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function(e) {
                 if (window.innerWidth <= 768) {
+                    // Eğer dropdown menü değilse veya dropdown içindeki linkse
                     if (!this.parentElement.classList.contains('dropdown') || 
-                        this.nextElementSibling === null) {
+                        (this.parentElement.classList.contains('dropdown') && this.nextElementSibling)) {
                         closeMobileMenu();
                     }
                 }
             });
+        });
+        
+        // Pencere boyutu değiştiğinde menüyü kapat
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
         });
         
         // FAQ (Sıkça Sorulan Sorular) Fonksiyonalliği
@@ -2547,5 +2555,6 @@
             });
         });
     </script>
+    
 </body>
 </html>
