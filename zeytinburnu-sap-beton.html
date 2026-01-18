@@ -2371,7 +2371,45 @@
         </a>
     </div>
     
-    <script>
+     <script>
+        // Slider Fonksiyonları
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.slider-dot');
+        const totalSlides = slides.length;
+        let slideInterval;
+        
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+        
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+        
+        function startSlider() {
+            slideInterval = setInterval(nextSlide, 3000);
+        }
+        
+        function stopSlider() {
+            clearInterval(slideInterval);
+        }
+        
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                stopSlider();
+                showSlide(index);
+                startSlider();
+            });
+        });
+        
+        startSlider();
+        
         // Kart döndürme fonksiyonelliği
         document.querySelectorAll('.flip-indicator').forEach(indicator => {
             indicator.addEventListener('click', function(e) {
@@ -2436,7 +2474,7 @@
             });
         });
         
-        // Mobil Menü Toggle - DÜZELTİLDİ
+        // Mobil Menü Toggle - DÜZELTİLMİŞ
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mainNav = document.getElementById('mainNav');
         const menuOverlay = document.getElementById('menuOverlay');
@@ -2445,57 +2483,73 @@
             const isActive = mainNav.classList.contains('active');
             mainNav.classList.toggle('active');
             menuOverlay.classList.toggle('active');
-            document.body.style.overflow = isActive ? 'auto' : 'hidden';
             
             if (isActive) {
                 mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                document.body.style.overflow = 'auto';
             } else {
                 mobileMenuBtn.innerHTML = '<i class="fas fa-times"></i>';
+                document.body.style.overflow = 'hidden';
             }
         }
         
         function closeMobileMenu() {
             mainNav.classList.remove('active');
             menuOverlay.classList.remove('active');
-            document.body.style.overflow = 'auto';
             mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            document.body.style.overflow = 'auto';
             
-            // Dropdown menüleri de kapat
+            // Dropdown'ları da kapat
             document.querySelectorAll('.dropdown').forEach(dropdown => {
                 dropdown.classList.remove('active');
             });
         }
         
-        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+        // Buton tıklama olayını dinle - DÜZELTİLMİŞ
+        mobileMenuBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+            toggleMobileMenu();
+        });
+        
         menuOverlay.addEventListener('click', closeMobileMenu);
         
-        // Dropdown Menü için Mobil Uyumluluk
+        // Mobilde dropdown'ları yönet
         const districtsDropdown = document.getElementById('districtsDropdown');
+        const dropdownLink = districtsDropdown.querySelector('a');
         
-        if (districtsDropdown) {
-            districtsDropdown.addEventListener('click', function(e) {
-                if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    this.classList.toggle('active');
-                }
-            });
-        }
+        dropdownLink.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                districtsDropdown.classList.toggle('active');
+                
+                // Diğer dropdown'ları kapat
+                document.querySelectorAll('.dropdown').forEach(dropdown => {
+                    if (dropdown !== districtsDropdown && dropdown.classList.contains('active')) {
+                        dropdown.classList.remove('active');
+                    }
+                });
+                
+                return false;
+            }
+        });
         
         // Menü Linklerine Tıklandığında Mobil Menüyü Kapat
         document.querySelectorAll('.main-nav a').forEach(link => {
             link.addEventListener('click', function(e) {
                 if (window.innerWidth <= 768) {
-                    // Eğer dropdown menü değilse veya dropdown içindeki linkse
+                    // Eğer bu bir dropdown linki değilse veya dropdown'ın kendisiyse
                     if (!this.parentElement.classList.contains('dropdown') || 
-                        (this.parentElement.classList.contains('dropdown') && this.nextElementSibling)) {
+                        this.nextElementSibling === null) {
                         closeMobileMenu();
                     }
                 }
             });
         });
         
-        // Pencere boyutu değiştiğinde menüyü kapat
+        // Sayfa boyutu değiştiğinde menüyü sıfırla
         window.addEventListener('resize', function() {
             if (window.innerWidth > 768) {
                 closeMobileMenu();
@@ -2539,7 +2593,7 @@
                     const href = this.getAttribute('href');
                     if (href && href.startsWith('tel:')) {
                         // Telefon araması için normal davranış olsun
-                        console.log('Zeytinburnu arama butonu tıklandı:', href);
+                        console.log('Arama butonu tıklandı:', href);
                     }
                 });
             });
@@ -2549,7 +2603,7 @@
                 button.addEventListener('click', function(e) {
                     const href = this.getAttribute('href');
                     if (href && (href.startsWith('tel:') || href.startsWith('https://wa.me/'))) {
-                        console.log('Zeytinburnu teklif butonu tıklandı:', href);
+                        console.log('Teklif butonu tıklandı:', href);
                     }
                 });
             });
